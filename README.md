@@ -1,41 +1,41 @@
-# MarketEcho
-Predicting Stock Price Movements Using Sentiment-Adjusted Metrics
-Stock markets are inherently influenced by numerous factors, including economic indicators, company performance, and public sentiment. Among these, public sentiment—reflected in tweets, news, and discussions—plays a crucial role in short-term market movements. Recognizing this, our project integrates sentiment analysis with traditional stock price analysis to create innovative metrics that better capture market dynamics and predict stock movements.
+# Stock Price Prediction and Sentiment Analysis
 
-Motivation for the Project
-The motivation for this project stems from:
+## **Introduction**
+Predicting stock price movements is a complex yet fascinating task. With the rise of social media, public sentiment has emerged as a crucial factor in influencing stock prices. This project combines traditional financial analysis with sentiment analysis to predict stock movements more effectively.
 
-Gaps in Traditional Analysis: Conventional stock price analysis methods, such as moving averages, often overlook the psychological aspect of market behavior influenced by public sentiment.
-Rise of Social Media: Platforms like Twitter have become hotbeds for investor opinions, with their sentiment significantly impacting stock prices, especially for high-profile companies like Apple (AAPL).
-Improved Predictive Accuracy: By integrating sentiment into price analysis, we aimed to enhance prediction models, offering traders and investors a more nuanced understanding of market trends.
-Key Features of the Project
-Sentiment Analysis:
+The core innovation of this project is the **Sentiment-Adjusted Moving Average (SAMA)**, which integrates public sentiment data into the calculation of stock price trends. Using tools like **VADER sentiment analysis**, **customized moving averages**, and a **machine learning model**, this project explores how sentiment-driven strategies can improve the accuracy of stock predictions.
 
-Collected tweets about the stock (e.g., AAPL).
-Processed tweets using the VADER Sentiment Analyzer to derive scores for positivity, neutrality, negativity, and an overall compound sentiment score.
-Sentiment-Adjusted Metrics:
+### **Key Features**
+1. **Data Collection and Processing**:
+   - Extracted stock-related tweets and analyzed them for sentiment scores using VADER.
+   - Mapped sentiment data to historical stock prices from Yahoo Finance.
 
-Developed custom moving averages, SAMA(7) and SAMA(20), that dynamically adjust based on sentiment scores to capture sentiment-driven market trends.
-Compared SAMA metrics with traditional moving averages (MA7 and MA20) to evaluate the impact of sentiment on price trends.
-Predictive Modeling:
+2. **Sentiment-Adjusted Moving Averages**:
+   - Developed **SAMA(7)** (short-term) and **SAMA(20)** (medium-term) moving averages that account for sentiment.
 
-Built machine learning models to predict stock price movements (up or down) based on historical prices, sentiment scores, and sentiment-adjusted metrics.
-Evaluated model performance using metrics such as accuracy, precision, recall, and F1 score.
-Challenges Encountered and Solutions
-Sentiment Analysis Data Availability:
+3. **Predictive Modeling**:
+   - Built a machine learning model to predict stock movements based on sentiment-adjusted metrics.
 
-Challenge: The stock tweets dataset needed cleaning and normalization for effective sentiment scoring.
-Resolution: Leveraged Python’s unicodedata library to preprocess text and ensured accurate scoring using the VADER lexicon, which required downloading missing dependencies.
-Incorporating Sentiment into Financial Metrics:
+4. **Interactive Dashboard**:
+   - Visualized stock prices, sentiment trends, and predictive outputs using Streamlit.
 
-Challenge: Traditional moving averages did not account for sentiment dynamics, making it necessary to design a novel approach.
-Resolution: Designed and implemented the SAMA function, which dynamically adjusts weights based on sentiment scores, providing a more refined view of stock trends.
-Feature Engineering for Prediction:
+---
 
-Challenge: Identifying and preparing relevant features, such as sentiment scores, moving averages, and historical prices, for use in machine learning models.
-Resolution: Created new features, ensured proper alignment of stock prices and sentiment data, and normalized inputs for better model performance.
-Evaluating Model Performance:
+## **How to Run the Streamlit Application**
 
-Challenge: Balancing simplicity and accuracy while testing models like Logistic Regression and Random Forest.
-Resolution: Used comprehensive metrics (accuracy, precision, recall, F1 score) and visualized feature importance to identify areas of improvement.
+### **Prerequisites**
+1. **Install Python**:
+   Ensure Python 3.7 or higher is installed on your machine.
 
+2. **Install Required Libraries**:
+   Run the following command to install all required libraries:
+   ```bash
+   pip install -r requirements.txt
+
+## **Steps to Run the Application**
+
+### **1. Clone the Repository**
+   Clone the project repository to your local machine:
+   ```bash
+   git clone https://github.com/your-repo-url.git
+   cd your-repo-directory
