@@ -7,16 +7,18 @@ The core innovation of this project is the **Sentiment-Adjusted Moving Average (
 
 ### **Key Features**
 1. **Data Collection and Processing**:
+   - Extract necessary data from Twitter API, TelegramAPI by running TelegramMain.py file and from reddit using RedditMain.py
+   - After Extraction of necessary data, we have used previously scraped twitter data for the sentiment prediction.
    - Extracted stock-related tweets and analyzed them for sentiment scores using VADER.
    - Mapped sentiment data to historical stock prices from Yahoo Finance.
 
-2. **Sentiment-Adjusted Moving Averages**:
+3. **Sentiment-Adjusted Moving Averages**:
    - Developed **SAMA(7)** (short-term) and **SAMA(20)** (medium-term) moving averages that account for sentiment.
 
-3. **Predictive Modeling**:
+4. **Predictive Modeling**:
    - Built a machine learning model to predict stock movements based on sentiment-adjusted metrics.
 
-4. **Interactive Dashboard**:
+5. **Interactive Dashboard**:
    - Visualized stock prices, sentiment trends, and predictive outputs using Streamlit.
 
 ---
@@ -32,11 +34,10 @@ The core innovation of this project is the **Sentiment-Adjusted Moving Average (
    ```bash
    pip install -r requirements.txt
 
-## **Steps to Run the Application**
+## **Steps to Run the Streamlit Application**
 
 ### **1. Clone the Repository**
    Clone the project repository to your local machine:
-   ```bash
    git clone https://github.com/your-repo-url.git
    cd your-repo-directory
 
@@ -44,3 +45,4 @@ The core innovation of this project is the **Sentiment-Adjusted Moving Average (
    Launch the Streamlit app by running:
    ```bash
    streamlit run streamlit.py
+
