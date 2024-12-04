@@ -36,11 +36,11 @@ The core innovation of this project is the **Sentiment-Adjusted Moving Average (
 
 ### **1. Clone the Repository**
    Clone the project repository to your local machine:
-   
+   ```bash
    git clone https://github.com/your-repo-url.git
    cd your-repo-directory
 
 ## **2. Run the Streamlit Application**
-   ```bash
    Launch the Streamlit app by running:
+   ```bash
    streamlit run streamlit.py
