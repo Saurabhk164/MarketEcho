@@ -32,8 +32,8 @@ with st.sidebar:
     #orientation = "horizontal",
 )
 # Load Data
-all_tweets = pd.read_csv(r"D:\Projects\MarketEcho\stock_tweets.csv")
-all_stock = pd.read_csv(r"D:\Projects\MarketEcho\stock_yfinance_data.csv")
+all_tweets = pd.read_csv(r"D:\Downloads\MarketEcho-main\MarketEcho-main\stock_tweets.csv")
+all_stock = pd.read_csv(r"D:\Downloads\MarketEcho-main\MarketEcho-main\stock_yfinance_data.csv")
 
 if selected == "Preview Data":
     st.write("Tweet Data Sample:")
